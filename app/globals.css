@@ -8,13 +8,14 @@
   --font-author: "Author-Regular", "sans-serif";
  
   --breakpoint-sm: 393px;
-  --breakpoint-md: 830px;
+  --breakpoint-sm-mid: 428px;
+  --breakpoint-sm-mids: 526px;
+  --breakpoint-sm-large: 640px;
+  --breakpoint-md: 800px;
+  --breakpoint-md-mid: 1024px;
   --breakpoint-lg: 1200px; 
   --breakpoint-xl: 1440px;
- 
-
- 
-      
+  --breakpoint-2xl: 1700px;
 
   --color-primary:  #000000 ;
   --color-secundary: #ffffff ;
@@ -27,21 +28,25 @@
   
 }
 
-/*
+
 @layer utilities {
-  .bg-banner {
-    background-image: url('../public/video/teste05.webp');
+  .bg-fundimage {
+    background-image: url('../public/fund01.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- 
+  }
  
 
 }
-*/
+
 @font-face {
   font-family: "Author-Regular";
   src: url("./fonts/Author-Regular.woff") format('woff');
   font-style: normal;
   font-display: swap;
 }
+
+
+
+
