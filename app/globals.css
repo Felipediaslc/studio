@@ -21,7 +21,7 @@
 
   --color-primary:  #000000 ;
   --color-secundary: #ffffff ;
-  --color-tertiary: #FB8C00 ;
+  --color-tertiary: #25454A ;
   --color-quaternary: #D0D2D3;
   --color-quinary:#666666;
   --color-senary: #EF4C00;
@@ -34,6 +34,12 @@
 @layer utilities {
   .bg-fundimage {
     background-image: url('../public/fund01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-navimage {
+    background-image: url('../public/fund002.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

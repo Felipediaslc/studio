@@ -62,7 +62,7 @@ export default function Page() {
 <nav 
   ref={menuRef}
   id="navbarCollapse"
-  className={`bg-primary absolute top-full left-4 z-10 rounded-[7px] px-6 py-5 shadow backdrop-blur-xl
+  className={`bg-navimage absolute top-full left-4 z-10 rounded-[7px] px-6 py-5 shadow backdrop-blur-xl
     h-[38vh] w-[59vw]                 /* default */
     sm:h-[35vh] sm:w-[57vw]           /* sm - mobile maior */
     sm-mid:!h-[34vh] sm-mid:w-[55vw]   /* breakpoint 428px*/
@@ -91,7 +91,7 @@ export default function Page() {
       <li key={item.href}>
         <Link
           href={item.href}
-          className="font-light  text-sm sm:text-sm sm-mid:text-base sm-large:text-base md:text-base lg:text-lg xl:text-xl font-Author flex py-2 lg:py-1 text-secundary tracking-[1px] leading-5 sm:leading-5 sm-mid:leading-6 sm-large:leading-6 md:leading-6 lg:leading-5 xl:leading-8 hover:text-tertiary transition-colors"
+          className="font-light  text-sm sm:text-sm sm-mid:text-base sm-large:text-base md:text-base lg:text-lg xl:text-xl font-Author flex py-2 lg:py-1 text-secundary tracking-[1px] leading-5 sm:leading-5 sm-mid:leading-6 sm-large:leading-6 md:leading-6 lg:leading-5 xl:leading-8 hover:text-orange-500 transition-colors"
           onClick={handleLinkClick}
         >
           {item.label}
@@ -103,7 +103,7 @@ export default function Page() {
     <li className="relative">
       <button
         onClick={() => setShowMegaMenu((prev) => !prev)}
-        className="font-light text-sm sm:text-sm sm-mid:text-base sm-large:text-base md:text-base lg:text-lg xl:text-xl font-Author flex w-full items-center justify-between gap-2 py-2 lg:py-1 text-secundary tracking-[1px] leading-5 sm:leading-5 sm-mid:leading-6 sm-large:leading-6 md:leading-6 lg:leading-7 xl:leading-8 hover:text-tertiary transition-colors"
+        className="font-light text-sm sm:text-sm sm-mid:text-base sm-large:text-base md:text-base lg:text-lg xl:text-xl font-Author flex w-full items-center justify-between gap-2 py-2 lg:py-1 text-secundary tracking-[1px] leading-5 sm:leading-5 sm-mid:leading-6 sm-large:leading-6 md:leading-6 lg:leading-7 xl:leading-8 hover:text-orange-500 transition-colors"
       >
         Nossos Produtos
         <span className={`transition-transform ${showMegaMenu ? "-rotate-180" : ""}`}>
@@ -128,7 +128,7 @@ export default function Page() {
           xl:!h-[47vh] xl:w-[280px]   xl:ml-6        /* xl - desktop */
           xl-mids:!h-[36vh]
           2xl:!h-[33vh]  2xl:ml-8
-        bg-primary  bg-blur-sm ${showMegaMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        bg-navimage  bg-blur-sm ${showMegaMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       >
         <div className="flex flex-col space-y-1">
           {[
@@ -143,7 +143,7 @@ export default function Page() {
             <a
               key={item.href}
               href={item.href}
-              className="font-light block px-4 py-1 text-sm sm:text-sm sm-mid:text-base sm-large:text-base md:text-base lg:text-lg xl:text-xl font-Author text-secundary tracking-[0.5px] leading-5 sm:leading-5 sm-mid:leading-6 sm-large:leading-6 md:leading-6 lg:leading-5 xl:leading-8 hover:text-tertiary transition-colors"
+              className="font-light block px-4 py-1 text-sm sm:text-sm sm-mid:text-base sm-large:text-base md:text-base lg:text-lg xl:text-xl font-Author text-secundary tracking-[0.5px] leading-5 sm:leading-5 sm-mid:leading-6 sm-large:leading-6 md:leading-6 lg:leading-5 xl:leading-8 hover:text-orange-500 transition-colors"
               onClick={handleLinkClick}
             >
               {item.label}
