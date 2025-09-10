@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -13,14 +14,22 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-
 import cleint01 from "../../../public/banner_img_01.png"
 import cleint02 from "../../../public/banner_img_03.png"
 import cleint03 from "../../../public/banner_img_01.png"
 import cleint04 from "../../../public/banner_img_03.png"
 import cleint05 from "../../../public/banner_img_03.png"
+import type { StaticImageData } from "next/image"
 
-const slides = [
+type Slide = {
+  img: StaticImageData
+  title: string
+  subtitle: string
+  text: string
+}
+
+
+const slides: Slide[] =[
   {
     img: cleint01,
     title: "Zay eCommerce",
@@ -53,17 +62,24 @@ const slides = [
   },
 ]
 
+
 export default function CarouselPlugin() {
+  // Autoplay: não parar permanentemente após drag (stopOnInteraction: false).
+  // vamos controlar pausa no hover manualmente com stop() / play()
   const plugin = React.useRef<ReturnType<typeof Autoplay>>(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: false })
   )
 
   return (
     <Carousel
+      // habilita o loop infinito do Embla
+      opts={{ loop: true }}
+      // passa o plugin
       plugins={[plugin.current]}
       className="relative w-[100vw]  max-w-[92vw] h-[80vh] mx-[5.8rem] lg:mb-12"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      // envolver em arrow functions para evitar que o event object seja passado diretamente
+      onMouseEnter={() => plugin.current?.stop()}
+      onMouseLeave={() => plugin.current?.play()}
     >
       <CarouselContent>
         {slides.map((slide, index) => (
@@ -71,15 +87,14 @@ export default function CarouselPlugin() {
             <div className="p-1">
               <Card className="shadow-none border-0">
                 <CardContent className="p-0">
-                  <article className="flex flex-col items-center lg:flex-row-reverse lg:justify-center 
-                  w-full h-[70vh] lg:h-[80vh] p-6 lg:p-12">
+                  <article className="flex flex-col items-center lg:flex-row-reverse lg:justify-center w-full h-[70vh] lg:h-[80vh] p-6 lg:p-12">
                     <Image
                       className="m-4 w-[280px] sm:w-[320px] md:w-[380px] lg:w-[480px]"
                       src={slide.img}
                       alt={`banner_img_${index + 1}`}
                     />
                     <section className="w-full lg:w-[45%] mt-10 lg:mt-0 lg:mr-10">
-                      <h1 className="mb-5 text-4xl font-light text-quaternary">
+                      <h1 className="mb-5 text-4xl font-light text-orange-500 ">
                         {slide.title}
                       </h1>
                       <h2 className="mb-4 text-xl text-secondary">
@@ -97,7 +112,6 @@ export default function CarouselPlugin() {
         ))}
       </CarouselContent>
 
-      {/* Botões de navegação sobrepostos */}
       <CarouselPrevious className="absolute top-1/2 left-4 -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-lg rounded-full p-2" />
       <CarouselNext className="absolute top-1/2 right-4 -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-lg rounded-full p-2" />
     </Carousel>
