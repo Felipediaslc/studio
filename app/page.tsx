@@ -1,14 +1,22 @@
 import Page from './components/home';
 import Motion from './components/motivation';
 
+import NovaPage from './components/novaPage';
+
+
 export default function Home() {
   return (
-<>
-      <main className="bg-fundimage w-[100dvw] h-[100dvh] overflow-x-hidden">
+
+      <section className="bg-fundimage w-auto h-full overflow-hidden">
         <Page />
         <Motion />
-      </main>
-    </>
+      
+        <NovaPage />
+     
+       
+      
+      </section>
+    
 
    
    

@@ -3,9 +3,9 @@
 
 export default function Page() {
   return (
-    <section className="h-[100dvh] w-[100dvw]
-    bg-transparent flex items-center justify-center">
-      <div className="font-author w-[90vw] h-[50vh] bg-transparent text-secundary mx-auto flex items-center justify-center flex-col gap-4">
+    <section className="h-[100dvh] w-[100dvw] bg-transparent
+    flex items-center justify-center">
+      <div className="font-author  w-[90vw] h-[50vh]  text-secundary mx-auto flex items-center justify-center flex-col gap-4">
         <h1 className="font-author  text-3xl md:text-4xl lg:text-5xl xl:text-6xl  text-center bg-transparent font-bold"> ESPECIALISTA EM<br />
          
            <span className="bg-orange-500 bg-clip-text text-transparent">PERSIANAS E CORTINAS</span>   <br />

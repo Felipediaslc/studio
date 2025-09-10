@@ -3,13 +3,13 @@ import React from "react";
 
 export default function Page() {
   return (
-    <section className="bg-transparent py-6 px-4 w-[100dvw] h-[100dvh] flex items-center justify-center">
-      <div className="font-author overflow-hidden rounded">
-        <div className="rounded flex flex-col gap-[3.75rem] p-6 lg:p-[3.75rem]">
+    <section className=" bg-transparent py-44 px-1 w-[100dvw] h-auto flex items-center justify-center">
+      <div className="font-author  overflow-hidden rounded lg:mr-4">
+        <div className=" rounded flex flex-col gap-[3.75rem] p-6 lg:p-[0.5rem]  ">
          <h2 className="text-center text-2xl font-cooper-bold text-secundary 
 lg:text-4xl">Título Section</h2>
 
-          <div className="flex -mt-6 flex-col justify-between gap-8 lg:flex-row">
+          <div className="  flex -mt-6 flex-col justify-between gap-8 lg:flex-row">
             <div className="lg:max-w-[25.875rem]">
               <div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
                 <span className="text-xl font-author text-secundary lg:text-2xl">
