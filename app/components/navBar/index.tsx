@@ -115,7 +115,7 @@ export default function Page() {
 
       {/* Dropdown */}
       <div
-        className={`absolute top-full left-0 mt-2 rounded-[7px] p-6  transition-all duration-300 
+        className={`absolute border border-amber-50  top-full left-0 -mt-2 md:mt-2 rounded-[7px] p-6  transition-all duration-300 
           h-[34vh] w-[63vw]                 /* default */
           sm:h-[32vh] sm:w-[57vw]           /* sm - mobile maior */
           sm-mid:h-[31vh] sm-mid:w-[55vw]   /* breakpoint 428px */
