@@ -93,7 +93,7 @@ export default function CarouselPlugin() {
                       src={slide.img}
                       alt={`banner_img_${index + 1}`}
                     />
-                    <section className="w-full lg:w-[45%] mt-10 lg:mt-0 lg:mr-10">
+                    <section className="w-full lg:w-[45%] mt-1 lg:mt-0 lg:mr-6">
                       <h1 className="mb-5 text-4xl font-light text-orange-500 ">
                         {slide.title}
                       </h1>
