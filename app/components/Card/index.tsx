@@ -52,7 +52,7 @@ export default function Page({
         <p className="text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-secondary">
           {subtitle}
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-quaternary">
           {title}
         </h2>
         <p className="text-xs sm:text-sm md:text-base text-secondary">
@@ -78,7 +78,7 @@ export default function Page({
               {oldPrice}
             </p>
           )}
-          <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-quaternary">
             {price}
           </p>
         </div>
