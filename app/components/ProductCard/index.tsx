@@ -6,7 +6,7 @@ import Card from "../Card/index";
 
 const products = [
   {
-    image: "/lop.jpg",
+    image: "/lop.png",
     title: "UltraBook Pro X",
     subtitle: "HIGH-PERFORMANCE LAPTOP",
     description:
@@ -19,7 +19,7 @@ const products = [
     hotSale: true,
   },
   {
-    image: "/lop.jpg",
+    image: "/lop.png",
     title: "WorkMate 14",
     subtitle: "LIGHTWEIGHT BUSINESS LAPTOP",
     description:
@@ -32,7 +32,7 @@ const products = [
     hotSale: false,
   },
   {
-    image: "/lop.jpg",
+    image: "/lop.png",
     title: "Gaming Beast Z",
     subtitle: "GAMING LAPTOP",
     description:
@@ -45,7 +45,7 @@ const products = [
     hotSale: true,
   },
   {
-    image: "/lop.jpg",
+    image: "/lop.png",
     title: "Gaming Beast Z",
     subtitle: "GAMING LAPTOP",
     description:

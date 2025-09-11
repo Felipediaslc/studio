@@ -6,37 +6,37 @@ export default function Page() {
     <section className=" bg-transparent py-44 px-1 w-[100dvw] h-auto flex items-center justify-center">
       <div className="font-author  overflow-hidden rounded lg:mr-4">
         <div className=" rounded flex flex-col gap-[3.75rem] p-6 lg:p-[0.5rem]  ">
-        <h1 className="text-[20px] sm:text-2xl md:text-4xl lg:text-5xl font-semibold tracking-[.25em] text-center mb-6 text-white">
+        <h1 className="text-[20px] sm:text-2xl md:text-4xl lg:text-5xl font-semibold tracking-[.25em] text-center mb-6 text-secondary">
         Título
       </h1>
 
           <div className="  flex -mt-6 flex-col justify-between gap-8 lg:flex-row">
             <div className="lg:max-w-[25.875rem]">
               <div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
-                <span className="text-xl font-author text-secundary lg:text-2xl">
+                <span className="text-xl font-author text-secondary lg:text-2xl">
                   Para aprender do zero
                 </span>
-                <p className="mt-2 text-sm text-secundary lg:text-base">
+                <p className="mt-2 text-sm text-secondary lg:text-base">
                   Fundamentos da programação web HTML, CSS, Git, banco de dados
                   relacional e não relacional, back-end e front-end.
                 </p>
               </div>
 
               <div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
-                <span className="text-xl font-author text-secundary lg:text-2xl">
+                <span className="text-xl font-author text-secondary lg:text-2xl">
                   Para se especializar
                 </span>
-                <p className="mt-2 text-sm text-secundary lg:text-base">
+                <p className="mt-2 text-sm text-secondary lg:text-base">
                   Trilhas de React e Node.js com ferramentas e tecnologias
                   alinhadas com o mercado.
                 </p>
               </div>
 
               <div className="mt-6 w-full flex-1 border-b border-orange-500 pb-6 last:border-none">
-                <span className="text-xl font-author text-secundary">
+                <span className="text-xl font-author text-secondary">
                   Para se manter atualizado
                 </span>
-                <p className="mt-2 text-sm text-secundary lg:text-base">
+                <p className="mt-2 text-sm text-secondary lg:text-base">
                   Masterclass exclusivas, encontros por voz com convidados e
                   newsletter com novidades do mercado.
                 </p>
@@ -52,7 +52,7 @@ export default function Page() {
               <div className="flex-grow border-t border-orange-500"></div>
               <div className="group/tag w-fit border border-transparent bg-gradient-to-b from-transparent to-transparent bg-origin-border overflow-hidden rounded">
                 <div className="flex items-center bg-primary/30 w-fit p-2 max-h-8 lg:px-4 lg:h-9 rounded">
-                  <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-secundary to-secundary font-medium font-mono">
+                  <span className="text-xs lg:text-sm whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary font-medium font-mono">
                     Também é para quem_
                   </span>
                 </div>
@@ -95,7 +95,7 @@ export default function Page() {
                       strokeWidth="2"
                     ></path>
                   </svg>
-                  <p className="text-center text-secundary text-sm lg:text-base lg:group-last:max-w-[8.25rem] lg:group-[&:nth-child(2)]:max-w-[14.4375rem] lg:group-[&:nth-child(3)]:max-w-[11.3125rem]">
+                  <p className="text-center text-secondary text-sm lg:text-base lg:group-last:max-w-[8.25rem] lg:group-[&:nth-child(2)]:max-w-[14.4375rem] lg:group-[&:nth-child(3)]:max-w-[11.3125rem]">
                     {text}
                   </p>
                 </div>

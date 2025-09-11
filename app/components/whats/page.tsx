@@ -10,7 +10,7 @@ export default function Page() {
         href="https://api.whatsapp.com/send/?phone=5583996050661&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawJgJdNleHRuA2FlbQIxMAABp-88NZQGBsH8dRzg4D5R33DLJFEy3Bp7uCxjwG1gPmW1orS1iesVbk7IdzwC_aem_oXxiy42RRMzCgSncGf0L0ghttps://api.whatsapp.com/send/?phone=5583996050661&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawJgJdNleHRuA2FlbQIxMAABp-88NZQGBsH8dRzg4D5R33DLJFEy3Bp7uCxjwG1gPmW1orS1iesVbk7IdzwC_aem_oXxiy42RRMzCgSncGf0L0g"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-secundary mx-1 flex rounded-full bg-green-500 pt-4 pr-3 pb-3 pl-4 shadow-lg transition hover:bg-green-600"
+        className="text-secondary mx-1 flex rounded-full bg-green-500 pt-4 pr-3 pb-3 pl-4 shadow-lg transition hover:bg-green-600"
       >
         <svg
           className="h-8 w-8"

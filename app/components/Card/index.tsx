@@ -28,7 +28,7 @@ export default function Page({
   hotSale,
 }: ProductCardProps) {
   return (
-    <div className="max-w-sm md:max-w-md lg:max-w-xl bg-white rounded-2xl  overflow-hidden ">
+    <div className="max-w-sm md:max-w-md lg:max-w-xl bg-secondary/10 rounded-2xl  overflow-hidden ">
       {/* Imagem */}
       <div className="relative">
         <Image
@@ -41,7 +41,7 @@ export default function Page({
         
 
         {hotSale && (
-          <span className="absolute top-3 right-3 bg-red-500 text-white text-[10px] sm:text-xs md:text-sm font-semibold px-2 sm:px-3 py-1 rounded-full ">
+          <span className="absolute top-3 right-3 bg-transparent border border-red-500 text-red-500 text-[10px] sm:text-xs md:text-sm font-semibold px-2 sm:px-3 py-1 rounded-full ">
             HOT SALE
           </span>
         )}
@@ -49,13 +49,13 @@ export default function Page({
 
       {/* Conteúdo */}
       <div className="p-4 sm:p-5 lg:p-6 space-y-3">
-        <p className="text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-gray-500">
+        <p className="text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-secondary">
           {subtitle}
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
           {title}
         </h2>
-        <p className="text-xs sm:text-sm md:text-base text-gray-600">
+        <p className="text-xs sm:text-sm md:text-base text-secondary">
           {description}
         </p>
 
@@ -64,7 +64,7 @@ export default function Page({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 sm:px-3 py-1 text-[10px] sm:text-xs rounded-full bg-gray-100 text-gray-600"
+              className="px-2 sm:px-3 py-1 text-[10px] sm:text-xs rounded-full bg-bg-secondary/10 border border-secondary text-secondary"
             >
               {tag}
             </span>
@@ -74,7 +74,7 @@ export default function Page({
         {/* Preço */}
         <div>
           {oldPrice && (
-            <p className="text-xs sm:text-sm text-gray-400 line-through">
+            <p className="text-xs sm:text-sm text-secondary line-through">
               {oldPrice}
             </p>
           )}
@@ -84,7 +84,7 @@ export default function Page({
         </div>
 
         {/* Botão */}
-        <button className="flex items-center justify-center gap-2 w-full bg-black text-white text-xs sm:text-sm md:text-base font-semibold py-2 md:py-3 rounded-xl shadow hover:bg-gray-800 transition">
+        <button className="flex items-center justify-center gap-2 w-full bg-black text-secondary text-xs sm:text-sm md:text-base font-semibold py-2 md:py-3 rounded-xl shadow hover:bg-gray-800 transition">
           <ShoppingCart size={18} />
           Add to Cart
         </button>
@@ -95,7 +95,7 @@ export default function Page({
             {"★★★★★".split("").map((star, index) => (
               <span key={index}>★</span>
             ))}
-            <span className="ml-1 sm:ml-2 text-[10px] sm:text-sm text-gray-600">
+            <span className="ml-1 sm:ml-2 text-[10px] sm:text-sm text-secondary">
               {reviews} Reviews
             </span>
           </div>
