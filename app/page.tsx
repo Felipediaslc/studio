@@ -2,6 +2,8 @@ import Page from './components/home';
 import Motion from './components/motivation';
 
 import NovaPage from './components/novaPage';
+import ProductCard from './components/ProductCard';
+
 
 
 export default function Home() {
@@ -12,7 +14,8 @@ export default function Home() {
         <Motion />
       
         <NovaPage />
-     
+        <ProductCard />
+      
        
       
       </section>

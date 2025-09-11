@@ -97,10 +97,10 @@ export default function CarouselPlugin() {
                       <h1 className="mb-5 text-4xl font-light text-orange-500 ">
                         {slide.title}
                       </h1>
-                      <h2 className="mb-4 text-xl text-secondary">
+                      <h2 className="mb-4 text-xl text-[#fff]">
                         {slide.subtitle}
                       </h2>
-                      <p className="text-secondary leading-relaxed">
+                      <p className="text-[#fff] leading-relaxed">
                         {slide.text}
                       </p>
                     </section>
