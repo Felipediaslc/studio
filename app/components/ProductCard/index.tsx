@@ -61,9 +61,9 @@ const products = [
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-transparent lg:h-auto px-6 py-12">
+    <main className="min-h-screen bg-transparent  px-6 py-12 lg:h-[150vh] lg:py-32">
      
-     <h1 className="text-[20px] tracking-[.25em] sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-center font-author mb-6 text-white">
+     <h1 className="lg:mb-12 text-[20px] tracking-[.25em] sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-center font-author mb-6 text-white">
         Título
       </h1>
 

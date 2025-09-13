@@ -3,6 +3,8 @@ import Motion from './components/motivation';
 
 import NovaPage from './components/novaPage';
 import ProductCard from './components/ProductCard';
+import Imovel from './components/cardCarosel'
+
 
 
 
@@ -15,7 +17,7 @@ export default function Home() {
       
         <NovaPage />
         <ProductCard />
-      
+        <Imovel />
        
       
       </section>

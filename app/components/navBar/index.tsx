@@ -48,7 +48,7 @@ export default function Page() {
   return (
     <header>
       <div className="fixed z-50  w-[100dvw] ">
-        <div className="bg-transparent ">
+        <div className="bg-navimage ">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="flex w-full items-center justify-between px-4">
               <div>
