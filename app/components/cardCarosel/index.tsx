@@ -88,7 +88,7 @@ function PropertyCard({
         <p className="text-sm text-gray-600">{title}</p>
 
         <div className="flex items-center justify-between">
-          <p className="text-lg font-bold text-black">
+          <p className="text-lg font-bold text-quinary">
             {price} <span className="font-normal text-sm">aluguel</span>
           </p>
           <Heart className="w-5 h-5 text-gray-500 hover:text-red-500 cursor-pointer" />
@@ -96,7 +96,7 @@ function PropertyCard({
 
         <p className="text-sm text-gray-500">{total} total</p>
 
-        <p className="text-sm font-medium text-black">{details}</p>
+        <p className="text-sm font-medium text-quinary">{details}</p>
         <p className="text-sm text-gray-600">{address}</p>
       </div>
     </div>

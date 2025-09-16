@@ -58,7 +58,7 @@ export default function FeaturedProducts() {
           </p>
           <a
             href="#"
-            className="font-author inline-block px-6 py-3 bg-primary/70 text-white font-medium rounded-full shadow hover:bg-primary/50 transition-colors text-sm sm:text-base"
+            className="font-author inline-block px-6 py-3 bg-quinary/70 text-white font-medium rounded-full shadow hover:bg-primary/50 transition-colors text-sm sm:text-base"
           >
             See All Collection
           </a>
@@ -83,13 +83,13 @@ export default function FeaturedProducts() {
                   />
                 </div>
                 <div className="p-4 font-author flex flex-col flex-1">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                  <h3 className="text-base sm:text-lg font-semibold text-quinary">
                     {product.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-500">
                     By {product.author}
                   </p>
-                  <span className="mt-2 text-primary/80 font-medium text-sm sm:text-base">
+                  <span className="mt-2 text-quinary font-author font-semibold text-sm sm:text-base">
                     {product.price}
                   </span>
                 </div>
@@ -108,7 +108,7 @@ export default function FeaturedProducts() {
             className={`w-3 h-3 rounded-full transition-all ${
               index === selectedIndex
                 ? "bg-secondary scale-110"
-                : "bg-primary/60 hover:bg-gray-400"
+                : "bg-secondary/60 hover:bg-gray-400"
             }`}
           />
         ))}

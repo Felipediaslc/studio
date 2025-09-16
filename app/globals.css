@@ -41,6 +41,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .bg-roomimage {
+    background-image: url('../public/01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 }
 

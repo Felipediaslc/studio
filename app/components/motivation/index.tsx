@@ -44,7 +44,7 @@ export default function Page() {
             </div>
 
             {/* Substituí o <Image> por uma div com bg-fundimage */}
-            <div className="bg-fundimage self-center rounded-[10px] w-[533px] h-[419px] bg-cover bg-center"></div>
+            <div className="bg-roomimage self-center rounded-[10px] w-[533px] h-[419px] bg-cover bg-center"></div>
           </div>
 
           <div className="flex flex-col gap-8">
