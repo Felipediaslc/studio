@@ -2,8 +2,10 @@ import Page from './components/home';
 import Motion from './components/motivation';
 
 import NovaPage from './components/novaPage';
-import ProductCard from './components/ProductCard';
-import Imovel from './components/cardCarosel'
+
+import Imovel from './components/cardCarosel';
+import Banner from './components/Banner';
+import Product from './components/FeactureProduts';
 
 
 
@@ -16,9 +18,10 @@ export default function Home() {
         <Motion />
       
         <NovaPage />
-        <ProductCard />
         <Imovel />
        
+        <Banner  />
+        <Product />
       
       </section>
     

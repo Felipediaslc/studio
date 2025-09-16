@@ -180,7 +180,7 @@ export default function Page() {
   ];
 
   return (
-      <section className="bg-transparent py-10 lg:py-44 px-2 lg:h-[200vh]">
+      <section className=" py-10 lg:py-24 px-2 lg:h-[150vh]">
     {/* Título */}
     <h2 className="lg:mb-24 text-[20px] tracking-[.25em] sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-center font-author mb-6 text-white">
       Imóveis em destaque

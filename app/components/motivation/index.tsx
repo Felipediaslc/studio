@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Page() {
   return (
-    <section className=" bg-transparent py-44 px-1 w-[100dvw] h-auto flex items-center justify-center">
+    <section className="  py-6 px-1 w-[100dvw] h-auto flex items-center justify-center">
       <div className="font-author  overflow-hidden rounded lg:mr-4">
         <div className=" rounded flex flex-col gap-[3.75rem] p-6 lg:p-[0.5rem]  ">
         <h1 className="text-[20px] sm:text-2xl md:text-4xl lg:text-5xl font-semibold tracking-[.25em] text-center mb-6 text-secondary">
